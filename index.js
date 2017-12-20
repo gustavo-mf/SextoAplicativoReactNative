@@ -1,4 +1,15 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+import React, { Component } from 'react';
+import { AppRegistry, StyleSheet } from 'react-native';
+import { Router, Scene } from 'react-native-router-flux';
 
-AppRegistry.registerComponent('app6', () => App);
+import Rotas from './src/components/rotas';
+
+class app6 extends Component {
+	render() {
+		return (
+			<Rotas />
+		);
+	}
+}
+
+AppRegistry.registerComponent('app6', () => app6);
